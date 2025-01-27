@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header,
+footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2 {
+    color: #4caf50;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: 20px;
+}
+
+a:hover {
+    color: #4caf50;
+    /* Example hover color */
+    transition: color 0.3s;
+}
+
+.navbar-logo {
+    height: 60px;
+    object-fit: contain;
+    /* Ensures the logo maintains aspect ratio */
+    margin-right: 15px;
+    /* Space between the logo and nav links */
+}
