@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/mahter-little-stars/static/css/main.dc095d58.css",
+    "main.js": "/mahter-little-stars/static/js/main.1adae41e.js",
+    "static/media/logo.png": "/mahter-little-stars/static/media/logo.e433703c3efe58fd8c1e.png",
+    "index.html": "/mahter-little-stars/index.html",
+    "main.dc095d58.css.map": "/mahter-little-stars/static/css/main.dc095d58.css.map",
+    "main.1adae41e.js.map": "/mahter-little-stars/static/js/main.1adae41e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc095d58.css",
+    "static/js/main.1adae41e.js"
+  ]
+}
