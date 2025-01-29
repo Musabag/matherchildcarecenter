@@ -1,28 +1,36 @@
 {
   "files": {
-    "main.css": "/mahter-little-stars/static/css/main.3ab53ccc.css",
-    "main.js": "/mahter-little-stars/static/js/main.e47391c0.js",
+    "main.css": "/mahter-little-stars/static/css/main.f8367208.css",
+    "main.js": "/mahter-little-stars/static/js/main.855f2398.js",
     "static/media/john.jpg": "/mahter-little-stars/static/media/john.e4d92063aabaffb48b29.jpg",
     "static/media/cumali.jpg": "/mahter-little-stars/static/media/cumali.a93c5ce56dec3219df64.jpg",
+    "static/media/fa-solid-900.ttf": "/mahter-little-stars/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/logo.png": "/mahter-little-stars/static/media/logo.e433703c3efe58fd8c1e.png",
+    "static/media/fa-brands-400.ttf": "/mahter-little-stars/static/media/fa-brands-400.1815e00441357e01619e.ttf",
     "static/media/gokhan.jpg": "/mahter-little-stars/static/media/gokhan.bfe31f026f90e7a9f90b.jpg",
+    "static/media/fa-solid-900.woff2": "/mahter-little-stars/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/mahter-little-stars/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/mahter-little-stars/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
     "static/media/maria.jpg": "/mahter-little-stars/static/media/maria.0b1838adb9fd8bc66a60.jpg",
     "static/media/rojhat.jpg": "/mahter-little-stars/static/media/rojhat.d511a2c21e641b849a81.jpg",
+    "static/media/fa-regular-400.woff2": "/mahter-little-stars/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
     "static/media/yusuf.jpg": "/mahter-little-stars/static/media/yusuf.983717ece945999fc9ca.jpg",
     "static/media/furkan.jpg": "/mahter-little-stars/static/media/furkan.deffb6d570e3122bae12.jpg",
     "static/media/isa.jpg": "/mahter-little-stars/static/media/isa.e16542379a3cdb1fe3da.jpg",
     "static/media/ella.jpg": "/mahter-little-stars/static/media/ella.1a21ebe76a4a68a38c31.jpg",
     "static/media/mert.jpg": "/mahter-little-stars/static/media/mert.1985a8342a0316984fac.jpg",
+    "static/media/fa-v4compatibility.ttf": "/mahter-little-stars/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/mahter-little-stars/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "static/media/slick.svg": "/mahter-little-stars/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/mahter-little-stars/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/mahter-little-stars/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/mahter-little-stars/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/mahter-little-stars/index.html",
-    "main.3ab53ccc.css.map": "/mahter-little-stars/static/css/main.3ab53ccc.css.map",
-    "main.e47391c0.js.map": "/mahter-little-stars/static/js/main.e47391c0.js.map"
+    "main.f8367208.css.map": "/mahter-little-stars/static/css/main.f8367208.css.map",
+    "main.855f2398.js.map": "/mahter-little-stars/static/js/main.855f2398.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ab53ccc.css",
-    "static/js/main.e47391c0.js"
+    "static/css/main.f8367208.css",
+    "static/js/main.855f2398.js"
   ]
 }
