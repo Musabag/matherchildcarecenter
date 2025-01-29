@@ -1,14 +1,28 @@
 {
   "files": {
-    "main.css": "/mahter-little-stars/static/css/main.dc095d58.css",
-    "main.js": "/mahter-little-stars/static/js/main.1adae41e.js",
+    "main.css": "/mahter-little-stars/static/css/main.3ab53ccc.css",
+    "main.js": "/mahter-little-stars/static/js/main.e47391c0.js",
+    "static/media/john.jpg": "/mahter-little-stars/static/media/john.e4d92063aabaffb48b29.jpg",
+    "static/media/cumali.jpg": "/mahter-little-stars/static/media/cumali.a93c5ce56dec3219df64.jpg",
     "static/media/logo.png": "/mahter-little-stars/static/media/logo.e433703c3efe58fd8c1e.png",
+    "static/media/gokhan.jpg": "/mahter-little-stars/static/media/gokhan.bfe31f026f90e7a9f90b.jpg",
+    "static/media/maria.jpg": "/mahter-little-stars/static/media/maria.0b1838adb9fd8bc66a60.jpg",
+    "static/media/rojhat.jpg": "/mahter-little-stars/static/media/rojhat.d511a2c21e641b849a81.jpg",
+    "static/media/yusuf.jpg": "/mahter-little-stars/static/media/yusuf.983717ece945999fc9ca.jpg",
+    "static/media/furkan.jpg": "/mahter-little-stars/static/media/furkan.deffb6d570e3122bae12.jpg",
+    "static/media/isa.jpg": "/mahter-little-stars/static/media/isa.e16542379a3cdb1fe3da.jpg",
+    "static/media/ella.jpg": "/mahter-little-stars/static/media/ella.1a21ebe76a4a68a38c31.jpg",
+    "static/media/mert.jpg": "/mahter-little-stars/static/media/mert.1985a8342a0316984fac.jpg",
+    "static/media/slick.svg": "/mahter-little-stars/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/mahter-little-stars/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/mahter-little-stars/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/mahter-little-stars/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/mahter-little-stars/index.html",
-    "main.dc095d58.css.map": "/mahter-little-stars/static/css/main.dc095d58.css.map",
-    "main.1adae41e.js.map": "/mahter-little-stars/static/js/main.1adae41e.js.map"
+    "main.3ab53ccc.css.map": "/mahter-little-stars/static/css/main.3ab53ccc.css.map",
+    "main.e47391c0.js.map": "/mahter-little-stars/static/js/main.e47391c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc095d58.css",
-    "static/js/main.1adae41e.js"
+    "static/css/main.3ab53ccc.css",
+    "static/js/main.e47391c0.js"
   ]
 }

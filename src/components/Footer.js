@@ -48,7 +48,7 @@ const Footer = () => {
                 </a>
                 <a
                     href="https://www.youtube.com"
-                    target="_blank"
+                    target="/@Matherchildcare"
                     rel="noopener noreferrer"
                     style={ { margin: '0 15px', color: '#fff', fontSize: '1.5rem' } }
                 >

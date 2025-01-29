@@ -1,73 +1,75 @@
+/* Testimonial Section */
+.testimonial-section {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.testimonial-title {
+    font-size: 2rem;
+    color: #4caf50;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.02);
+}
+
+/* Testimonial Image */
+.testimonial-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4caf50;
+    margin-bottom: 15px;
+}
+
+/* Testimonial Comment */
+.testimonial-comment {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Testimonial Name */
+.testimonial-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.learn-more-content {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.learn-more-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
+    background-color: #f9f9f9;
     color: #333;
-}
-
-header,
-footer {
-    background-color: #4caf50;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-}
-
-nav {
-    background-color: #333;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-h1,
-h2 {
-    color: #4caf50;
-}
-
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    margin-top: 20px;
-}
-
-a:hover {
-    color: #4caf50;
-    /* Example hover color */
-    transition: color 0.3s;
-}
-
-.navbar-logo {
-    height: 60px;
-    object-fit: contain;
-    /* Ensures the logo maintains aspect ratio */
-    margin-right: 15px;
-    /* Space between the logo and nav links */
 }

@@ -54,10 +54,10 @@ const ContactPage = () => {
                     <strong>Address:</strong> { address }
                 </p>
                 <p>
-                    <strong>Email:</strong> info@mahterlittlestars.com
+                    <strong>Email:</strong> matherchildcarecenter@gmail.com
                 </p>
                 <p>
-                    <strong>Phone:</strong> (555) 123-4567
+                    <strong>Phone:</strong> (916) 755-1688
                 </p>
             </div>
 
@@ -167,7 +167,7 @@ const ContactPage = () => {
                             address
                         )}&zoom=15&size=800x400&maptype=roadmap&markers=color:red%7Clabel:A%7C${encodeURIComponent(
                             address
-                        )}&key=AIZA_syAy6CbRg8OU2Bf_lM6mJYwcQpF3kjNUSpI` }
+                        )}&key=AIzaSyAy6CbRg8OU2Bf_lM6mJYwcQpF3kjNUSpI` }
                         alt="Google Map Location"
                         style={ {
                             width: '100%',

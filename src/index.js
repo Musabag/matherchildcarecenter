@@ -1,6 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './style.css'; // Include your CSS
-import App from './App';
+import ReactDOM from 'react-dom/client';
+import App from './components/App';
+import './index.css'; // ✅ Importing the newly created index.css
+import '@fortawesome/fontawesome-free/css/all.min.css'; // ✅ FontAwesome for icons
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
