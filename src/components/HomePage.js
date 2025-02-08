@@ -7,7 +7,7 @@ const HomePage = () => {
     return (
         <div style={ { textAlign: 'center', padding: '50px 20px', fontFamily: "'Arial', sans-serif" } }>
             <h1 style={ { color: '#4caf50', fontSize: '2.5rem', fontWeight: 'bold' } }>
-                Welcome to Mahter Little Stars
+                Welcome to Mather Little Stars
             </h1>
             <p style={ { fontSize: '1.2rem', color: '#555', maxWidth: '800px', margin: '0 auto' } }>
                 We nurture young minds with care and creativity, empowering the next generation to blossom and thrive.
