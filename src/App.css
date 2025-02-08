@@ -5,3 +5,67 @@ body {
     background-color: #f9f9f9;
     color: #333;
 }
+
+/* Makes videos responsive & fit the screen */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px; /* Adjust based on your design */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* ✅ Fix video height and ensure it doesn’t stretch */
+.video-container video {
+    width: 100%;
+    max-width: 900px;  /* Limits the width */
+    max-height: 500px; /* Ensures video doesn’t take too much space */
+    object-fit: cover;  /* Crops the video instead of stretching */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Staff Page Grid Layout */
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Individual Staff Card */
+.staff-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Staff Photos - Ensures all images have the same size */
+.staff-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover; /* ✅ Ensures the image is cropped, not stretched */
+    border-radius: 50%; /* ✅ Makes the images circular */
+    border: 3px solid #4caf50;
+}
+.video-container {
+    width: 100%;
+    max-width: 800px; /* Limits the max size */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-container video {
+    width: 100%; /* Makes it responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow */
+}

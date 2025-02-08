@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -15,16 +15,20 @@ const App = () => {
     return (
         <Router>
             <Navbar />
-            <Suspense fallback={ <div>Loading...</div> }>
+            
+            <main style={{ minHeight: '80vh', paddingBottom: '20px' }}>
                 <Routes>
-                    <Route path="/" element={ <HomePage /> } />
-                    <Route path="/staff" element={ <StaffPage /> } />
-                    <Route path="/activities" element={ <ActivitiesPage /> } />
-                    <Route path="/events" element={ <EventsPage /> } />
-                    <Route path="/contact" element={ <ContactPage /> } />
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/staff" element={<StaffPage />} />
+                    <Route path="/activities" element={<ActivitiesPage />} />
+                    <Route path="/events" element={<EventsPage />} />
+                    <Route path="/contact" element={<ContactPage />} />
                 </Routes>
-                <Testimonials />
-            </Suspense>
+            </main>
+
+            {/* ✅ Testimonials placed correctly to avoid loading delays */}
+            <Testimonials />
+
             <Footer />
         </Router>
     );

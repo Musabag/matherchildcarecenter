@@ -1,51 +1,74 @@
-import React from 'react';
-import maria from '../assets/staff/maria.jpg';
-import ella from '../assets/staff/ella.jpg';
-import david from '../assets/staff/david.jpg';
-import cumali from '../assets/staff/cumali.jpg';
-import gokhan from '../assets/staff/gokhan.jpg';
-import yusuf from '../assets/staff/yusuf.jpg';
-import furkan from '../assets/staff/furkan.jpg';
-import isa from '../assets/staff/isa.jpg';
-import rojhat from '../assets/staff/rojhat.jpg';
-import john from '../assets/staff/john.jpg';
-import mert from '../assets/staff/mert.jpg';
+import React, { useState } from 'react';
+
+// ✅ Import images
+import maria from '../assets/img/staff/maria.jpg';
+import ella from '../assets/img/staff/ella.jpg';
+import suleyman from '../assets/img/staff/suleyman.jpg';
+import cumali from '../assets/img/staff/cumali.jpg';
+import isa from '../assets/img/staff/isa.jpg';
+import gokhan from '../assets/img/staff/gokhan.jpg';
+import furkan from '../assets/img/staff/furkan.jpg';
+import rojhat from '../assets/img/staff/rojhat.jpg';
+import mert from '../assets/img/staff/mert.jpg';
+import john from '../assets/img/staff/john.jpg';
+import yusuf from '../assets/img/staff/yusuf.jpg';
+
+// Staff Data with Skills
 const staffMembers = [
-    { name: 'Maria Voicova', title: 'Director', image: maria },
-    { name: 'Ella Bagci', title: 'Music Teacher', image: ella },
-    { name: 'David Davidson', title: 'Art Teacher', image: david },
-    { name: 'Cumali Akbas', title: 'Skill Director', image: cumali },
-    { name: 'Gokhan Bagci', title: 'Chef', image: gokhan },
-    { name: 'Yusuf Bagci', title: 'Director Assistant', image: yusuf },
+    { name: "Maria Voicova", role: "Director", photo: maria, skills: "Leadership, Childcare Management, Parent Communication" },
+    { name: "Ella Bagci", role: "Music Teacher", photo: ella, skills: "Piano, Vocal Training, Rhythm Exercises" },
+    { name: "Suleyman Akbas", role: "Art Instructor", photo: suleyman, skills: "Painting, Drawing, Sculpture" },
+    { name: "Cumali Akbas", role: "Skill Director", photo: cumali, skills: "STEM Activities, Cognitive Development, Hand-Eye Coordination" },
+    { name: "Isa Kurucan", role: "Skill Director", photo: isa, skills: "Social Development, Teamwork, Critical Thinking" },
+    { name: "Gokhan Bagci", role: "Chef", photo: gokhan, skills: "Healthy Cooking, Meal Planning, Nutrition for Kids" },
+    { name: "Furkan Bagci", role: "Chef", photo: furkan, skills: "Baking, Food Safety, Kitchen Organization" },
+    { name: "Rojhat Bagci", role: "Facilities Management", photo: rojhat, skills: "Safety Procedures, Building Maintenance, Clean Environment" },
+    { name: "Mert Bagci", role: "Coding Instructor", photo: mert, skills: "Scratch, Python, Web Development for Kids" },
+    { name: "John Bagci", role: "Coding Instructor", photo: john, skills: "JavaScript, Robotics, Algorithmic Thinking" },
+    { name: "Yusuf Bagci", role: "Director Assistant", photo: yusuf, skills: "Administrative Support, Organization, Event Coordination" },
 ];
 
 const StaffPage = () => {
+    const [selectedStaff, setSelectedStaff] = useState(null);
+
+    const openModal = (staff) => {
+        setSelectedStaff(staff);
+    };
+
+    const closeModal = () => {
+        setSelectedStaff(null);
+    };
+
     return (
-        <div style={ { padding: '20px', fontFamily: "'Arial', sans-serif" } }>
-            <h1 style={ { textAlign: 'center', color: '#4caf50' } }>Our Staff</h1>
-            <div style={ { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginTop: '30px' } }>
-                { staffMembers.map((staff, index) => (
-                    <div
-                        key={ index }
-                        style={ {
-                            border: '1px solid #ccc',
-                            borderRadius: '10px',
-                            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-                            padding: '10px',
-                            textAlign: 'center',
-                            backgroundColor: '#fff',
-                        } }
-                    >
-                        <img
-                            src={ staff.image }
-                            alt={ staff.name }
-                            style={ { width: '100%', borderRadius: '10px', marginBottom: '10px' } }
-                        />
-                        <h2 style={ { color: '#4caf50', marginBottom: '5px' } }>{ staff.name }</h2>
-                        <p style={ { color: '#555' } }>{ staff.title }</p>
+        <div style={{ textAlign: "center", margin: "20px" }}>
+            <h1 style={{ color: "#4caf50" }}>Meet Our Team</h1>
+            <p style={{ fontSize: "1.2rem", color: "#555", maxWidth: "800px", margin: "auto" }}>
+                Click on a staff member to learn more about their skills!
+            </p>
+
+            {/* Staff Grid */}
+            <div className="staff-grid">
+                {staffMembers.map((staff, index) => (
+                    <div key={index} className="staff-card" onClick={() => openModal(staff)}>
+                        <img src={staff.photo} alt={staff.name} className="staff-photo" />
+                        <h3>{staff.name}</h3>
+                        <p>{staff.role}</p>
                     </div>
-                )) }
+                ))}
             </div>
+
+            {/* Modal Popup */}
+            {selectedStaff && (
+                <div className="modal-overlay" onClick={closeModal}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <button className="close-btn" onClick={closeModal}>✖</button>
+                        <img src={selectedStaff.photo} alt={selectedStaff.name} className="modal-photo" />
+                        <h2>{selectedStaff.name}</h2>
+                        <h4>{selectedStaff.role}</h4>
+                        <p><strong>Skills:</strong> {selectedStaff.skills}</p>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
